@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Encriptador</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<figure>
+				<img src="./img/alura_logo.svg" alt="Logo de Alura" />
+			</figure>
+		</header>
+		<main>
+			<section class="box-left">
+				<section class="texto-escrito">
+					<textarea
+						name="text"
+						cols="30"
+						rows="10"
+						placeholder="Ingrese el texto aqui"
+						id="textoOriginal"
+					></textarea>
+					<div class="informacion-ingreso">
+						<figure>
+							<img
+								src="./img/alert.svg"
+								alt="Imagen del signo de exclamacion"
+							/>
+						</figure>
+						<p>Solo en letras minusculas y sin acentos</p>
+					</div>
+				</section>
+				<section class="botones">
+					<button class="boton boton-1" id="encriptar">Encriptar</button>
+					<button class="boton boton-2" id="desencriptar">Desencriptar</button>
+				</section>
+			</section>
+			<section class="box-right">
+				<div class="ningun-mensaje" id="ningun-mensaje">
+					<figure>
+						<img
+							src="./img/muneco.svg"
+							alt="dibujo de una persona con una lupa"
+						/>
+					</figure>
+					<div class="texto">
+						<h3>Ningún mensaje fue encontrado</h3>
+						<p>Ingresa el texto que deseas encriptar o desencriptar.</p>
+					</div>
+				</div>
+				<div class="mensaje-encriptado disable" id="mensaje-encriptado">
+					<p id="resultadoTexto"></p>
+				</div>
+				<section class="botones">
+					<button class="boton boton-2 btnCopiar disable" id="copiar">Copiar</button>
+				</section>
+			</section>
+		</main>
+		<footer>
+			<p>Desarrollado por Michelle Fernandez para Oracle/Alura Latam</p>
+		</footer>
+		<script src="./js/main.js"></script>
+	</body>
+</html>

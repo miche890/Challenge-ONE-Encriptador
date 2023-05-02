@@ -1,0 +1,297 @@
+/* Generales */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #e5e5e5;
+	color: #0a3871;
+	font-family: 'Inter';
+	overflow-x: hidden;
+}
+figure {
+	margin: 0;
+	width: fit-content;
+	height: fit-content;
+}
+
+/* Header */
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 40px;
+}
+
+header figure {
+	margin: 15px 35px;
+}
+
+header img {
+	width: 20px;
+}
+
+/* Main */
+
+main {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.box-left,
+.box-right {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+/* box-left */
+
+.box-left {
+	display: flex;
+	flex-direction: column;
+}
+
+.texto-escrito {
+	width: 90%;
+}
+
+.texto-escrito textarea {
+	width: 90%;
+	background: transparent;
+	border: none;
+	resize: none;
+	font-family: 'Inter';
+	font-style: normal;
+	font-size: 2rem;
+	color: #0a3871;
+	margin: 5px auto;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+textarea::placeholder {
+	color: #0a3871;
+}
+
+/* Información */
+
+.informacion-ingreso {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px;
+	gap: 8px;
+}
+
+.informacion-ingreso p {
+	margin: 0;
+	font-size: 12px;
+	color: #495057;
+}
+
+/* box-right */
+
+.box-right {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 75%;
+	padding: 32px;
+	gap: 32px;
+	background: #ffffff;
+	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+	border-radius: 32px;
+	height: 100%;
+}
+.ningun-mensaje, .mensaje-encriptado {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.box-right img {
+	display: none;
+}
+
+.texto {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 16px;
+}
+
+.texto h3 {
+	font-family: 'Inter';
+	font-style: normal;
+	font-size: 24px;
+	text-align: center;
+	color: #343a40;
+	flex: none;
+	order: 0;
+	align-self: stretch;
+	flex-grow: 0;
+	margin: 0;
+}
+.texto p {
+	font-family: 'Inter';
+	font-style: normal;
+	font-size: 16px;
+	text-align: center;
+	color: #495057;
+	flex: none;
+	order: 1;
+	align-self: stretch;
+	flex-grow: 0;
+	margin: 0;
+}
+
+.disable {
+	display: none;
+}
+
+.mensaje-encriptado {
+	height: 70%;
+}
+
+.mensaje-encriptado p {
+	width: 90%;
+	border: none;
+	font-family: 'Inter';
+	font-style: normal;
+	font-size: 2rem;
+	color: #0a3871;
+	margin: 5px auto;
+}
+
+/* Botones */
+
+.botones {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 90%;
+	padding: 0px;
+	gap: 15px;
+	margin: 15px auto;
+}
+
+.boton {
+	max-width: 300px;
+	max-height: 67px;
+	width: 100%;
+	font-family: 'Inter';
+	font-size: 15px;
+	line-height: 19px;
+	text-align: center;
+	border-radius: 24px;
+	padding: 24px;
+}
+
+.boton-1 {
+	color: #e5e5e5;
+	background: #0a3871;
+	border: none;
+}
+
+.boton-1:hover {
+	background: #072b61;
+}
+
+.boton-2 {
+	color: #0a3871;
+	background: #f3f5fc;
+	border: 1px solid #0a3871;
+}
+
+.boton-2:hover {
+	background: #eff1fa;
+}
+
+/* Footer */
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+footer p {
+	color: #343a40;
+	width: fit-content;
+	text-align: center;
+}
+
+@media (min-width: 500px) {
+	.botones {
+		width: 100%;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.boton {
+		width: 90%;
+		margin: 0 5px;
+	}
+}
+
+@media (min-width: 768px) {
+	main {
+		flex-direction: row;
+		justify-content: center;
+		height: 100vh;
+		padding: 20px;
+	}
+	.box-left {
+		justify-content: space-between;
+		margin: 0.03rem 1rem;
+	}
+	.texto-escrito {
+		margin-top: 25px;
+	}
+	.texto-escrito textarea {
+		height: 70vh;
+	}
+	.box-right {
+		min-width: 320px;
+		flex-shrink: 3;
+		height: 100%;
+		justify-content: center;
+		padding: 0 32px;
+	}
+	.box-right figure {
+		width: 90%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	.box-right img {
+		display: flex;
+		max-width: 100%;
+	}
+	.boton {
+		max-width: 328px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.botones {
+		flex-direction: row;
+		justify-content: center;
+		gap: 14px;
+	}
+}
